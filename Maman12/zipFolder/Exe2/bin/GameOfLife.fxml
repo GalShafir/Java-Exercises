@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefWidth="346.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+    <center>
+        <Canvas fx:id="gameCanvas" height="300.0" width="300.0" />
+    </center>
+    <bottom>
+        <HBox alignment="CENTER">
+            <Button onAction="#nextGenClicked" text="Next Gen" textFill="#901b1b">
+            <font>
+               <Font name="System Bold Italic" size="15.0" />
+            </font></Button>
+        </HBox>
+    </bottom>
+</BorderPane>
