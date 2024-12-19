@@ -1,0 +1,2 @@
+java GenericSetMain
+pause

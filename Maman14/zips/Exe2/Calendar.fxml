@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalendarController">
+    <top>
+        <GridPane hgap="10" vgap="10" alignment="CENTER">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <Label text="Year:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <ComboBox fx:id="yearComboBox" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label text="Month:" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+            <ComboBox fx:id="monthComboBox" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+        </GridPane>
+    </top>
+    <center>
+        <GridPane fx:id="calendarGrid" hgap="5" vgap="5" alignment="CENTER">
+        </GridPane>
+    </center>
+</BorderPane>
